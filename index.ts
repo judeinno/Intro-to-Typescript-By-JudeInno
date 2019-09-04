@@ -1,9 +1,7 @@
-type person = {firstName: string}
+import { Person } from './person.interface';
 
-const example1: object = undefined;
+const example1: Person = {firstName: 'Dollan', middleName: 'Boy', lastName: 'Jude'};
 
-const example2: Object = NaN;
-
-const example3: person = {firstName: 'Jude'};
-
-example3.firstName = 'Dylan';
+example1.firstName = 'Dylan';
+example1.middleName = 'Coding God';
+example1.lastName = 'Israel';
