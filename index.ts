@@ -1,5 +1,13 @@
-const example1: object = undefined;
+import { Person } from './person.model';
 
-const example2: Object = undefined;
+function add(val1: number, val2: number) {
+  return val1 + val2
+}
 
-const example3: {} = undefined;
+add(1, 10);
+
+function sayHello(person: Person) {
+  return `Say hello to my litle friend , ${person.firstname}`
+}
+
+sayHello(new Person({firstname: 'Jude'}))
