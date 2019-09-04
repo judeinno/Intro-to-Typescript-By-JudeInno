@@ -1,7 +1,3 @@
-import { Bear } from './bear.model';
+let definetlyNotAString: any = 'I am a string';
 
-const bear = new Bear(3);
-
-if (bear instanceof Bear) {
-    console.log("Hello from TypeScript");
-}
+let strLength = (<string> definetlyNotAString).length;
