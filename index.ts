@@ -1,4 +1,4 @@
-let example1: boolean = true;
+let example1: boolean | number = 35;
 
 let example2: number = 35;
 
