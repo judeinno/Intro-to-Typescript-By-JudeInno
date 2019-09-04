@@ -1,17 +1,9 @@
-import { Person } from './person.model';
+type person = {firstName: string}
 
-function add(val1: number, val2: number): number {
-    return val1 + val2;
-}
+const example1: object = undefined;
 
-function sayHello(person: Person): string {
-    return `Say Hello to My Little Friend, ${person.firstName}!`
-}
+const example2: Object = NaN;
 
-function voidExample(): void {
-    add(1,2);
-}
+const example3: person = {firstName: 'Jude'};
 
-function neverExample(): never {
-  throw Error;
-}
+example3.firstName = 'Dylan';
