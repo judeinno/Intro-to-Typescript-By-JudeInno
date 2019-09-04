@@ -1,1 +1,9 @@
-const exampleTuple: [string, number] = ['https://www.YouTube.com/CodingTutorials360', 30];
+import { Age } from './age.enum';
+import { Names } from './name.enum';
+
+function totalAge(age1: Age, age2: Age) {
+    return age1 + age2;
+}
+
+totalAge(Age.dylan, Age.mother);
+
