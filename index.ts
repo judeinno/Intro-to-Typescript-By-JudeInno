@@ -1,5 +1,8 @@
-function example<T>(arg: T): T {
-  return arg
-}
+import { Bear } from './bear.model';
+import { Animal} from './animal.model';
 
-example(5);
+const bear = new Bear({name: 'Omega', tail: true});
+bear.claws = 3;
+bear.add(1, 2);
+
+
